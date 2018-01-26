@@ -1,0 +1,47 @@
+#rectangle {
+	width: 850px;
+	height: 300px;
+	background: steelblue;
+	margin: auto;
+}
+
+#square {
+	width: 175px;
+	height: 175px;
+	background: steelblue;
+	border: 1px inset gray;
+	margin: auto;
+}
+
+.row {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+	column-gap: 10px;
+	margin: auto;
+}
+
+.column {
+	float: none;
+	padding: 10px;
+	height: 200px;
+
+}
+
+.left {
+	width: 328px;
+	column-gap: 10px;
+	background: steelblue;
+}
+
+.right {
+	width: 512px;
+	column-gap: 10px;
+	background: rosybrown;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
